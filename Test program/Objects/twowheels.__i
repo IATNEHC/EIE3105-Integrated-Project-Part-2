@@ -1,0 +1,10 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-old-style-cast
+-I./RTE/Device/STM32F103C8
+-I./RTE/_Target_1
+-IC:/Users/user/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include
+-IC:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include
+-IC:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc
+-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_
+-o ./objects/twowheels.o -MD "Twowheels.c"

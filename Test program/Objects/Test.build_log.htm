@@ -1,0 +1,423 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kin Sang Sze, PolyU HK, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\user\Downloads\Polyu\Year 3 Sem 2\EIE3105 Course Material\Test program\Test.uvprojx
+Project File Date:  08/11/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/misc.c(132): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+1 warning generated.
+compiling misc.c...
+MrLamPrograms/sr04.cpp(8): warning: no previous prototype for function 'getDistance' [-Wmissing-prototypes]
+unsigned getDistance(void) { return distance / 1050; } 
+         ^
+MrLamPrograms/sr04.cpp(8): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned getDistance(void) { return distance / 1050; } 
+^
+static 
+MrLamPrograms/sr04.cpp(10): warning: no previous prototype for function 'sr04' [-Wmissing-prototypes]
+void sr04(unsigned phase) {
+     ^
+MrLamPrograms/sr04.cpp(10): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void sr04(unsigned phase) {
+^
+static 
+2 warnings generated.
+compiling sr04.cpp...
+MrLamPrograms/button.cpp(5): warning: no previous prototype for function 'read_button' [-Wmissing-prototypes]
+bool read_button(void) { return key; }
+     ^
+MrLamPrograms/button.cpp(5): note: declare 'static' if the function is not intended to be used outside of this translation unit
+bool read_button(void) { return key; }
+^
+static 
+MrLamPrograms/button.cpp(6): warning: no previous prototype for function 'on_button' [-Wmissing-prototypes]
+void __attribute__((weak)) on_button(bool) {}
+                           ^
+MrLamPrograms/button.cpp(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __attribute__((weak)) on_button(bool) {}
+^
+static 
+MrLamPrograms/button.cpp(8): warning: no previous prototype for function 'button' [-Wmissing-prototypes]
+void button(void) {
+     ^
+MrLamPrograms/button.cpp(8): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void button(void) {
+^
+static 
+3 warnings generated.
+compiling button.cpp...
+MrLamPrograms/main.cpp(3): warning: no previous extern declaration for non-static variable 'SPI_data' [-Wmissing-variable-declarations]
+char SPI_data = 0;
+     ^
+MrLamPrograms/main.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char SPI_data = 0;
+^
+MrLamPrograms/main.cpp(25): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
+char buffer[30];
+     ^
+MrLamPrograms/main.cpp(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char buffer[30];
+^
+MrLamPrograms/main.cpp(44): warning: no previous prototype for function 'on_button' [-Wmissing-prototypes]
+void on_button(bool b) {
+     ^
+MrLamPrograms/main.cpp(44): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void on_button(bool b) {
+^
+static 
+3 warnings generated.
+compiling main.cpp...
+MrLamPrograms/led.cpp(15): warning: declaration requires a global constructor [-Wglobal-constructors]
+} static blue(GPIOB, 12), green(GPIOB, 6), yellow(GPIOA, 0);
+         ^~~~~~~~~~~~~~~
+MrLamPrograms/led.cpp(15): warning: declaration requires a global constructor [-Wglobal-constructors]
+} static blue(GPIOB, 12), green(GPIOB, 6), yellow(GPIOA, 0);
+                          ^~~~~~~~~~~~~~~
+MrLamPrograms/led.cpp(15): warning: declaration requires a global constructor [-Wglobal-constructors]
+} static blue(GPIOB, 12), green(GPIOB, 6), yellow(GPIOA, 0);
+                                           ^~~~~~~~~~~~~~~~
+MrLamPrograms/led.cpp(14): warning: padding class 'Led' with 3 bytes to align 'period' [-Wpadded]
+  unsigned int period, count;
+               ^
+MrLamPrograms/led.cpp(26): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    if (pin == 1<<12) base->BRR = pin; else base->BSRR = pin;
+                                ~ ^~~
+MrLamPrograms/led.cpp(26): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    if (pin == 1<<12) base->BRR = pin; else base->BSRR = pin;
+                                                       ~ ^~~
+MrLamPrograms/led.cpp(29): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    if (pin == 1<<12) base->BSRR = pin; else base->BRR = pin;
+                                 ~ ^~~
+MrLamPrograms/led.cpp(29): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    if (pin == 1<<12) base->BSRR = pin; else base->BRR = pin;
+                                                       ~ ^~~
+MrLamPrograms/led.cpp(41): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  if (base->ODR & pin) base->BRR = pin; else base->BSRR = pin;
+                ~ ^~~
+MrLamPrograms/led.cpp(41): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  if (base->ODR & pin) base->BRR = pin; else base->BSRR = pin;
+                                 ~ ^~~
+MrLamPrograms/led.cpp(41): warning: implicit conversion changes signedness: 'int' to 'std::uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  if (base->ODR & pin) base->BRR = pin; else base->BSRR = pin;
+                                                        ~ ^~~
+MrLamPrograms/led.cpp(44): warning: no previous prototype for function 'led' [-Wmissing-prototypes]
+void led(void) {
+     ^
+MrLamPrograms/led.cpp(44): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void led(void) {
+^
+static 
+MrLamPrograms/led.cpp(50): warning: no previous prototype for function 'led' [-Wmissing-prototypes]
+void led(led_color c, led_state s) {
+     ^
+MrLamPrograms/led.cpp(50): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void led(led_color c, led_state s) {
+^
+static 
+13 warnings generated.
+compiling led.cpp...
+MrLamPrograms/uart.cpp(5): warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+  Uart(USART_TypeDef *b) { base = b; ptr = 0; }
+                                           ^
+                                           nullptr
+MrLamPrograms/uart.cpp(10): warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        else ptr = 0;
+                   ^
+                   nullptr
+MrLamPrograms/uart.cpp(26): warning: declaration requires a global constructor [-Wglobal-constructors]
+} static uart2(USART2), uart3(USART3);
+         ^~~~~~~~~~~~~
+MrLamPrograms/uart.cpp(26): warning: declaration requires a global constructor [-Wglobal-constructors]
+} static uart2(USART2), uart3(USART3);
+                        ^~~~~~~~~~~~~
+MrLamPrograms/uart.cpp(28): warning: no previous prototype for function 'uart2_print' [-Wmissing-prototypes]
+bool uart2_print(const char* p) { return uart2.print(p); }
+     ^
+MrLamPrograms/uart.cpp(28): note: declare 'static' if the function is not intended to be used outside of this translation unit
+bool uart2_print(const char* p) { return uart2.print(p); }
+^
+static 
+MrLamPrograms/uart.cpp(29): warning: no previous prototype for function 'uart3_print' [-Wmissing-prototypes]
+bool uart3_print(const char* p) { return uart3.print(p); }
+     ^
+MrLamPrograms/uart.cpp(29): note: declare 'static' if the function is not intended to be used outside of this translation unit
+bool uart3_print(const char* p) { return uart3.print(p); }
+^
+static 
+MrLamPrograms/uart.cpp(30): warning: no previous prototype for function 'uart2_read' [-Wmissing-prototypes]
+int uart2_read(void) { return uart2.read(); }
+    ^
+MrLamPrograms/uart.cpp(30): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int uart2_read(void) { return uart2.read(); }
+^
+static 
+MrLamPrograms/uart.cpp(31): warning: no previous prototype for function 'uart3_read' [-Wmissing-prototypes]
+int uart3_read(void) { return uart3.read(); }
+    ^
+MrLamPrograms/uart.cpp(31): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int uart3_read(void) { return uart3.read(); }
+^
+static 
+MrLamPrograms/uart.cpp(33): warning: no previous prototype for function 'USART2_IRQHandler' [-Wmissing-prototypes]
+extern "C" void USART2_IRQHandler(void) { uart2.isr(); }
+                ^
+MrLamPrograms/uart.cpp(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
+extern "C" void USART2_IRQHandler(void) { uart2.isr(); }
+           ^
+           static 
+MrLamPrograms/uart.cpp(34): warning: no previous prototype for function 'USART3_IRQHandler' [-Wmissing-prototypes]
+extern "C" void USART3_IRQHandler(void) { uart3.isr(); }
+                ^
+MrLamPrograms/uart.cpp(34): note: declare 'static' if the function is not intended to be used outside of this translation unit
+extern "C" void USART3_IRQHandler(void) { uart3.isr(); }
+           ^
+           static 
+10 warnings generated.
+compiling uart.cpp...
+compiling stm32f10x_gpio.c...
+MrLamPrograms/tim1.cpp(11): warning: declaration requires a global constructor [-Wglobal-constructors]
+} static timer;
+         ^~~~~
+MrLamPrograms/tim1.cpp(10): warning: padding class 'Timer' with 3 bytes to align 'last' [-Wpadded]
+  unsigned int last;
+               ^
+MrLamPrograms/tim1.cpp(13): warning: no previous prototype for function 'TIM1_UP_IRQHandler' [-Wmissing-prototypes]
+extern "C" void TIM1_UP_IRQHandler(void) {
+                ^
+MrLamPrograms/tim1.cpp(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+extern "C" void TIM1_UP_IRQHandler(void) {
+           ^
+           static 
+MrLamPrograms/tim1.cpp(30): warning: implicit conversion loses integer precision: 'volatile std::uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+    c = SPI1->DR;
+      ~ ~~~~~~^~
+MrLamPrograms/tim1.cpp(22): warning: no previous prototype for function 'SPI1_IRQHandler' [-Wmissing-prototypes]
+extern "C" void SPI1_IRQHandler(void) {
+                ^
+MrLamPrograms/tim1.cpp(22): note: declare 'static' if the function is not intended to be used outside of this translation unit
+extern "C" void SPI1_IRQHandler(void) {
+           ^
+           static 
+MrLamPrograms/tim1.cpp(86): warning: no previous prototype for function 'wait' [-Wmissing-prototypes]
+void wait(unsigned int i) {
+     ^
+MrLamPrograms/tim1.cpp(86): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void wait(unsigned int i) {
+^
+static 
+MrLamPrograms/tim1.cpp(93): warning: implicit conversion loses integer precision: 'unsigned int' to 'std::uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  TIM1->CCR1 = i;
+             ~ ^
+MrLamPrograms/tim1.cpp(92): warning: no previous prototype for function 'pwmLeft' [-Wmissing-prototypes]
+void pwmLeft(unsigned int i) {    //input must be lest than 45000
+     ^
+MrLamPrograms/tim1.cpp(92): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void pwmLeft(unsigned int i) {    //input must be lest than 45000
+^
+static 
+MrLamPrograms/tim1.cpp(97): warning: implicit conversion loses integer precision: 'unsigned int' to 'std::uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  TIM1->CCR2 = i;
+             ~ ^
+MrLamPrograms/tim1.cpp(96): warning: no previous prototype for function 'pwmRight' [-Wmissing-prototypes]
+void pwmRight(unsigned int i) {   //input must be lest than 45000
+     ^
+MrLamPrograms/tim1.cpp(96): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void pwmRight(unsigned int i) {   //input must be lest than 45000
+^
+static 
+MrLamPrograms/tim1.cpp(100): warning: no previous prototype for function 'setLeft' [-Wmissing-prototypes]
+void setLeft(bool b) {             //true-forward
+     ^
+MrLamPrograms/tim1.cpp(100): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void setLeft(bool b) {             //true-forward
+^
+static 
+MrLamPrograms/tim1.cpp(106): warning: no previous prototype for function 'setRight' [-Wmissing-prototypes]
+void setRight(bool b) {            //true-forward
+     ^
+MrLamPrograms/tim1.cpp(106): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void setRight(bool b) {            //true-forward
+^
+static 
+MrLamPrograms/tim1.cpp(112): warning: no previous prototype for function 'getADC' [-Wmissing-prototypes]
+unsigned int getADC(void) { return ADC1->DR; }
+             ^
+MrLamPrograms/tim1.cpp(112): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned int getADC(void) { return ADC1->DR; }
+^
+static 
+MrLamPrograms/tim1.cpp(113): warning: no previous prototype for function 'getPath' [-Wmissing-prototypes]
+char getPath(void) { return timer.path; }
+     ^
+MrLamPrograms/tim1.cpp(113): note: declare 'static' if the function is not intended to be used outside of this translation unit
+char getPath(void) { return timer.path; }
+^
+static 
+MrLamPrograms/tim1.cpp(114): warning: no previous prototype for function 'getLeft' [-Wmissing-prototypes]
+unsigned int getLeft(void) { return timer.left; }
+             ^
+MrLamPrograms/tim1.cpp(114): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned int getLeft(void) { return timer.left; }
+^
+static 
+MrLamPrograms/tim1.cpp(115): warning: no previous prototype for function 'getRight' [-Wmissing-prototypes]
+unsigned int getRight(void) { return timer.right; }
+             ^
+MrLamPrograms/tim1.cpp(115): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned int getRight(void) { return timer.right; }
+^
+static 
+16 warnings generated.
+compiling tim1.cpp...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(23): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(87): warning: padding size of 'I2S_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(494): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = (uint16_t)1 << (uint16_t)itpos;
+         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(839): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(845): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = 0x01 << itmask;
+         ~ ~~~~~^~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(891): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rcc.c...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(23): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(51): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(726): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(1983): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2013): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2058): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_Set << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_tim.c...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_usart.c(23): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_usart.h(50): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_usart.c(1043): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling stm32f10x_usart.c...
+assembling startup_stm32f10x_md.s...
+RTE/Device/STM32F103C8/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(167): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=2936 RO-data=276 RW-data=20 ZI-data=1760  
+FromELF: creating hex file...
+".\Objects\Test.axf" - 0 Error(s), 61 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: Framework Version: 3.5.1
+   * Component: GPIO Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: SPI Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C8
+  .\RTE\_Target_1
+  C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\user\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  C:\Users\user\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SPI:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_spi.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_spi.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

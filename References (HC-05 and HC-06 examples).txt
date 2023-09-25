@@ -1,0 +1,17 @@
+HC05 vs HC06:
+
+https://www.instructables.com/AT-command-mode-of-HC-05-Bluetooth-module/
+
+HC05 Program Examples
+
+https://howtomechatronics.com/tutorials/arduino/arduino-and-hc-05-bluetooth-module-tutorial/
+
+https://create.arduino.cc/projecthub/electropeak/getting-started-with-hc-05-bluetooth-module-arduino-e0ca81
+
+HC06 Program Examples
+
+http://arduinolearning.com/learning/arduino-and-hc-06-bluetooth-example.php
+
+https://www.aranacorp.com/en/arduino-and-bluetooth-module-hc-06/
+
+https://www.instructables.com/Add-bluetooth-to-your-Arduino-project-ArduinoHC-06/

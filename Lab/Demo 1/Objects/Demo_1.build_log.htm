@@ -1,0 +1,260 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kin Sang Sze, PolyU HK, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\user\Downloads\Polyu\Year 3 Sem 2\EIE3105 Course Material\Lab\Demo 1\Demo_1.uvprojx
+Project File Date:  08/18/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/misc.c(132): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+1 warning generated.
+compiling misc.c...
+assembling startup_stm32f10x_md.s...
+RTE/Device/STM32F103C8/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(167): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+UltraSonic.c(1): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(8302): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(87): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(51): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+UltraSonic.c(6): warning: no previous prototype for function 'TIM1_CH3_CH3N_init' [-Wmissing-prototypes]
+void TIM1_CH3_CH3N_init()
+     ^
+UltraSonic.c(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM1_CH3_CH3N_init()
+^
+static 
+UltraSonic.c(6): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void TIM1_CH3_CH3N_init()
+                       ^
+UltraSonic.c(1): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(8302): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(90): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_usart.h(50): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+UltraSonic.c(54): warning: no previous prototype for function 'USART2_init' [-Wmissing-prototypes]
+void USART2_init(void)
+     ^
+UltraSonic.c(54): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void USART2_init(void)
+^
+static 
+UltraSonic.c(87): warning: no previous prototype for function 'USARTSend' [-Wmissing-prototypes]
+void USARTSend(char *pucBuffer, unsigned long ulCount)
+     ^
+UltraSonic.c(87): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void USARTSend(char *pucBuffer, unsigned long ulCount)
+^
+static 
+UltraSonic.c(97): warning: no previous prototype for function 'TIM3_delay_us' [-Wmissing-prototypes]
+void TIM3_delay_us(unsigned short period) 
+     ^
+UltraSonic.c(97): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM3_delay_us(unsigned short period) 
+^
+static 
+UltraSonic.c(113): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
+char buffer[50] = {'\0'};
+     ^
+UltraSonic.c(113): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char buffer[50] = {'\0'};
+^
+UltraSonic.c(114): warning: no previous extern declaration for non-static variable 'pulseHigh' [-Wmissing-variable-declarations]
+__IO bool pulseHigh = false;
+          ^
+UltraSonic.c(114): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__IO bool pulseHigh = false;
+     ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+UltraSonic.c(115): warning: no previous extern declaration for non-static variable 'generate_pulse' [-Wmissing-variable-declarations]
+__IO bool generate_pulse = true;
+          ^
+UltraSonic.c(115): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__IO bool generate_pulse = true;
+     ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+UltraSonic.c(116): warning: no previous extern declaration for non-static variable 'pulseWidth' [-Wmissing-variable-declarations]
+__IO u32 pulseWidth = 0;
+         ^
+UltraSonic.c(116): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__IO u32 pulseWidth = 0;
+     ^
+UltraSonic.c(117): warning: no previous extern declaration for non-static variable 'captureValue' [-Wmissing-variable-declarations]
+__IO u32 captureValue = 0;
+         ^
+UltraSonic.c(117): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__IO u32 captureValue = 0;
+     ^
+UltraSonic.c(118): warning: no previous extern declaration for non-static variable 'distance' [-Wmissing-variable-declarations]
+__IO u32 distance = 0;
+         ^
+UltraSonic.c(118): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__IO u32 distance = 0;
+     ^
+UltraSonic.c(172): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+                                        sprintf(buffer, "%d\r\n", distance);
+                                        ^
+UltraSonic.c(172): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+UltraSonic.c(156): warning: no previous prototype for function 'TIM1_CC_IRQHandler' [-Wmissing-prototypes]
+void TIM1_CC_IRQHandler(void)
+     ^
+UltraSonic.c(156): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM1_CC_IRQHandler(void)
+^
+static 
+15 warnings generated.
+compiling UltraSonic.c...
+compiling stm32f10x_gpio.c...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(23): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_spi.h(87): warning: padding size of 'I2S_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(494): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = (uint16_t)1 << (uint16_t)itpos;
+         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(839): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(845): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = 0x01 << itmask;
+         ~ ~~~~~^~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_spi.c(891): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_spi.c...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_usart.c(23): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_usart.h(50): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_usart.c(1043): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling stm32f10x_usart.c...
+compiling stm32f10x_rcc.c...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(23): warning: In file included from...
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(51): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(726): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(1983): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2013): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/user/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2058): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_Set << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=3466 RO-data=274 RW-data=0 ZI-data=1704  
+FromELF: creating hex file...
+".\Objects\Demo_1.axf" - 0 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: Framework Version: 3.5.1
+   * Component: GPIO Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: SPI Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C8
+  .\RTE\_Target_1
+  C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\user\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  C:\Users\user\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SPI:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_spi.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_spi.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
